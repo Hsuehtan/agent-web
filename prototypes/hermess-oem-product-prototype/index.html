@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hermess OEM 产品原型图</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="prototype">
+      <aside class="prototype-rail">
+        <div class="brand-block">
+          <div class="brand-mark">H</div>
+          <div>
+            <div class="brand-title">Hermess OEM</div>
+            <div class="brand-subtitle">产品原型图 v1</div>
+          </div>
+        </div>
+        <div class="rail-section">
+          <div class="rail-label">原型页面</div>
+          <nav id="screenNav" class="screen-nav"></nav>
+        </div>
+        <div class="rail-section rail-note">
+          <div class="rail-label">设计依据</div>
+          <p>基于当前项目路由、侧边栏分组、README 功能清单和 Pure Ink 主题整理。</p>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="workspace-header">
+          <div>
+            <div class="eyebrow">Prototype Gallery</div>
+            <h1 id="screenTitle">产品总览</h1>
+          </div>
+          <div class="header-actions">
+            <button class="ghost-btn" id="themeToggle">切换深色</button>
+            <button class="primary-btn" id="flowButton">查看关键流程</button>
+          </div>
+        </header>
+
+        <section id="screenStage" class="screen-stage"></section>
+      </main>
+    </div>
+
+    <div id="prototypeModal" class="modal-backdrop" hidden>
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modalTitle">交互说明</h2>
+          <button class="icon-btn" id="modalClose" aria-label="关闭">x</button>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

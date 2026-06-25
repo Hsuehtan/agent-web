@@ -1,0 +1,10 @@
+[project]
+requires = ["nodejs-24"]
+
+[dev]
+build = ["bash", "-c", "pip install -e /workspace/projects/hermes-agent && cp scripts/hermes-mock.sh /usr/local/bin/hermes && chmod +x /usr/local/bin/hermes && pnpm install && npx vite build && node scripts/build-server.mjs"]
+run = ["bash", "-c", "unset AUTH_DISABLED; HERMES_WEB_UI_STOP_GATEWAYS_ON_SHUTDOWN=0 HERMES_AGENT_ROOT=/workspace/projects/hermes-agent node dist/server/index.js"]
+
+[deploy]
+build = ["bash", "-c", "pip install --target=dist/pylibs /workspace/projects/hermes-agent 2>&1 | tail -5 && cp scripts/hermes-mock.sh /usr/local/bin/hermes && chmod +x /usr/local/bin/hermes && pnpm install && npx vite build && node scripts/build-server.mjs"]
+run = ["bash", "-c", "unset AUTH_DISABLED; HERMES_WEB_UI_STOP_GATEWAYS_ON_SHUTDOWN=0 HERMES_AGENT_ROOT=$(pwd)/dist/hermes-agent PYTHONPATH=$(pwd)/dist/pylibs:$(pwd)/dist/hermes-agent PATH=$(pwd)/dist/bin:$PATH node dist/server/index.js"]

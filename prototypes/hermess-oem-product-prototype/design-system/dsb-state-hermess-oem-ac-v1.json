@@ -1,0 +1,321 @@
+{
+  "runId": "hermess-oem-ac-v1",
+  "figma": {
+    "fileKey": "SwPySQVcE4xhgGtFTm3mnJ",
+    "fileUrl": "https://www.figma.com/design/SwPySQVcE4xhgGtFTm3mnJ",
+    "teamKey": "team::1651559250734964691",
+    "uiBaseFiles": {
+      "A_LIGHT_ENTERPRISE_OPS": {
+        "fileKey": "7JtKYbKWWk7LMQaBuT9vom",
+        "fileUrl": "https://www.figma.com/design/7JtKYbKWWk7LMQaBuT9vom",
+        "page": "01 UI Base / A Light",
+        "frames": [
+          "Cover / Enterprise Ops Light",
+          "Screen / 运维总览 Dashboard 1440",
+          "Foundation / Components and Tokens"
+        ],
+        "phase2Pages": {
+          "coverStart": "7:2",
+          "foundations": "7:29",
+          "componentsSeparator": "7:103",
+          "componentsPreview": "7:104",
+          "utilitiesSeparator": "7:148",
+          "utilitiesPatterns": "7:149"
+        },
+        "phase3Components": {
+          "Button": {
+            "pageId": "12:2",
+            "componentSetId": "12:106",
+            "variantCount": 27,
+            "axes": {
+              "Size": ["Small", "Medium", "Large"],
+              "Style": ["Primary", "Secondary", "Ghost"],
+              "State": ["Default", "Hover", "Disabled"]
+            },
+            "properties": ["Label", "Show Prefix"],
+            "validated": true
+          },
+          "Input": {
+            "pageId": "16:2",
+            "componentSetId": "16:100",
+            "variantCount": 12,
+            "axes": {
+              "Size": ["Small", "Medium", "Large"],
+              "State": ["Default", "Focused", "Error", "Disabled"]
+            },
+            "properties": ["Label", "Placeholder", "Helper Text", "Show Prefix", "Show Helper"],
+            "validated": true
+          },
+          "Badge": {
+            "pageId": "18:2",
+            "componentSetId": "18:109",
+            "variantCount": 30,
+            "axes": {
+              "Size": ["Small", "Medium"],
+              "Tone": ["Neutral", "Info", "Success", "Warning", "Danger"],
+              "Style": ["Soft", "Solid", "Outline"]
+            },
+            "properties": ["Label", "Show Dot"],
+            "validated": true
+          },
+          "Table": {
+            "pageId": "23:2",
+            "componentSetId": "23:511",
+            "variantCount": 12,
+            "axes": {
+              "Density": ["Comfortable", "Compact"],
+              "Selection": ["None", "Multi"],
+              "State": ["Default", "Loading", "Empty"]
+            },
+            "properties": ["Title", "Primary Text", "Status Text", "Show Actions"],
+            "validated": true
+          },
+          "FilterBar": {
+            "pageId": "27:2",
+            "componentSetId": "27:141",
+            "variantCount": 12,
+            "axes": {
+              "Density": ["Comfortable", "Compact"],
+              "Mode": ["Basic", "Advanced"],
+              "State": ["Default", "Filtered", "Disabled"]
+            },
+            "properties": ["Query", "Show Batch"],
+            "validated": true
+          },
+          "MetricCard": {
+            "pageId": "27:142",
+            "componentSetId": "27:219",
+            "variantCount": 10,
+            "axes": {
+              "Tone": ["Neutral", "Info", "Success", "Warning", "Danger"],
+              "Trend": ["Up", "Down"]
+            },
+            "properties": ["Label", "Value", "Trend Text"],
+            "validated": true
+          },
+          "AppShell Navigation": {
+            "pageId": "27:220",
+            "componentSetId": "27:305",
+            "variantCount": 6,
+            "axes": {
+              "Layout": ["Expanded", "Collapsed"],
+              "Active": ["Overview", "Agents", "Tasks"]
+            },
+            "properties": ["Brand"],
+            "validated": true
+          },
+          "DetailDrawer": {
+            "pageId": "27:306",
+            "componentSetId": "27:421",
+            "variantCount": 6,
+            "axes": {
+              "Size": ["Medium", "Large"],
+              "State": ["Default", "Warning", "Error"]
+            },
+            "properties": ["Title", "Subtitle"],
+            "validated": true
+          }
+        },
+        "phase4Review": {
+          "pageId": "29:2",
+          "frameId": "29:3",
+          "previewFrameId": "29:32",
+          "validated": true
+        }
+      },
+      "C_DARK_AGENT_COMMAND": {
+        "fileKey": "ivdDrT9yZDmnoinKxPGzy0",
+        "fileUrl": "https://www.figma.com/design/ivdDrT9yZDmnoinKxPGzy0",
+        "page": "01 UI Base / C Dark",
+        "frames": [
+          "Cover / Agent Command Dark",
+          "Screen / Agent Command Dashboard 1440",
+          "Foundation / Dark Components and Tokens"
+        ],
+        "phase2Pages": {
+          "coverStart": "5:2",
+          "foundations": "5:31",
+          "componentsSeparator": "5:106",
+          "componentsPreview": "5:107",
+          "utilitiesSeparator": "5:152",
+          "utilitiesPatterns": "5:153"
+        },
+        "phase3Components": {
+          "Button": {
+            "pageId": "10:2",
+            "componentSetId": "10:107",
+            "variantCount": 27,
+            "axes": {
+              "Size": ["Small", "Medium", "Large"],
+              "Style": ["Primary", "Secondary", "Ghost"],
+              "State": ["Default", "Hover", "Disabled"]
+            },
+            "properties": ["Label", "Show Prefix"],
+            "validated": true
+          },
+          "Input": {
+            "pageId": "13:2",
+            "componentSetId": "13:101",
+            "variantCount": 12,
+            "axes": {
+              "Size": ["Small", "Medium", "Large"],
+              "State": ["Default", "Focused", "Error", "Disabled"]
+            },
+            "properties": ["Label", "Placeholder", "Helper Text", "Show Prefix", "Show Helper"],
+            "validated": true
+          },
+          "Badge": {
+            "pageId": "16:2",
+            "componentSetId": "16:109",
+            "variantCount": 30,
+            "axes": {
+              "Size": ["Small", "Medium"],
+              "Tone": ["Neutral", "Info", "Success", "Warning", "Danger"],
+              "Style": ["Soft", "Solid", "Outline"]
+            },
+            "properties": ["Label", "Show Dot"],
+            "validated": true
+          },
+          "Table": {
+            "pageId": "20:2",
+            "componentSetId": "20:511",
+            "variantCount": 12,
+            "axes": {
+              "Density": ["Comfortable", "Compact"],
+              "Selection": ["None", "Multi"],
+              "State": ["Default", "Loading", "Empty"]
+            },
+            "properties": ["Title", "Primary Text", "Status Text", "Show Actions"],
+            "validated": true
+          },
+          "FilterBar": {
+            "pageId": "22:2",
+            "componentSetId": "22:141",
+            "variantCount": 12,
+            "axes": {
+              "Density": ["Comfortable", "Compact"],
+              "Mode": ["Basic", "Advanced"],
+              "State": ["Default", "Filtered", "Disabled"]
+            },
+            "properties": ["Query", "Show Batch"],
+            "validated": true
+          },
+          "MetricCard": {
+            "pageId": "22:142",
+            "componentSetId": "22:219",
+            "variantCount": 10,
+            "axes": {
+              "Tone": ["Neutral", "Info", "Success", "Warning", "Danger"],
+              "Trend": ["Up", "Down"]
+            },
+            "properties": ["Label", "Value", "Trend Text"],
+            "validated": true
+          },
+          "AppShell Navigation": {
+            "pageId": "22:220",
+            "componentSetId": "22:305",
+            "variantCount": 6,
+            "axes": {
+              "Layout": ["Expanded", "Collapsed"],
+              "Active": ["Overview", "Agents", "Tasks"]
+            },
+            "properties": ["Brand"],
+            "validated": true
+          },
+          "DetailDrawer": {
+            "pageId": "22:306",
+            "componentSetId": "22:421",
+            "variantCount": 6,
+            "axes": {
+              "Size": ["Medium", "Large"],
+              "State": ["Default", "Warning", "Error"]
+            },
+            "properties": ["Title", "Subtitle"],
+            "validated": true
+          }
+        },
+        "phase4Review": {
+          "pageId": "24:2",
+          "frameId": "24:3",
+          "previewFrameId": "24:32",
+          "validated": true
+        }
+      }
+    }
+  },
+  "phase": "phase4",
+  "completedSteps": [
+    "phase0-scope-lock",
+    "phase1-foundation-variables",
+    "phase1-typography-styles",
+    "phase1-effect-styles",
+    "phase1-validation"
+    ,
+    "ui-base-a-light-file",
+    "ui-base-c-dark-file",
+    "phase2-a-light-pages",
+    "phase2-c-dark-pages",
+    "phase2-foundations-screenshot-validation",
+    "phase3-button-a-light",
+    "phase3-button-c-dark",
+    "phase3-button-width-fix",
+    "phase3-button-screenshot-validation",
+    "phase3-input-a-light",
+    "phase3-input-c-dark",
+    "phase3-input-screenshot-validation",
+    "phase3-badge-a-light",
+    "phase3-badge-c-dark",
+    "phase3-badge-layout-fix",
+    "phase3-badge-screenshot-validation",
+    "phase3-table-a-light",
+    "phase3-table-c-dark",
+    "phase3-table-screenshot-validation",
+    "phase3-filterbar-a-light",
+    "phase3-filterbar-c-dark",
+    "phase3-metric-card-a-light",
+    "phase3-metric-card-c-dark",
+    "phase3-navigation-a-light",
+    "phase3-navigation-c-dark",
+    "phase3-detail-drawer-a-light",
+    "phase3-detail-drawer-c-dark",
+    "phase3-remaining-components-layout-fix",
+    "phase3-remaining-components-screenshot-validation",
+    "phase4-qa-review-a-light",
+    "phase4-qa-review-c-dark",
+    "phase4-integrated-preview-validation"
+  ],
+  "entities": {
+    "collections": {
+      "Primitives": {
+        "id": "VariableCollectionId:2:2",
+        "modes": ["Value"],
+        "variableCount": 34
+      },
+      "Color": {
+        "id": "VariableCollectionId:2:37",
+        "modes": ["Light / Enterprise Blue", "Dark / Agent Command"],
+        "variableCount": 31
+      },
+      "Spacing": {
+        "id": "VariableCollectionId:2:69",
+        "modes": ["Value"],
+        "variableCount": 10
+      },
+      "Radius": {
+        "id": "VariableCollectionId:2:80",
+        "modes": ["Value"],
+        "variableCount": 6
+      },
+      "Size": {
+        "id": "VariableCollectionId:2:87",
+        "modes": ["Value"],
+        "variableCount": 8
+      }
+    },
+    "styles": {
+      "textStyleCount": 9,
+      "effectStyleCount": 3
+    }
+  },
+  "nextStep": "product-screen-refinement"
+}
