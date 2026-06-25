@@ -16,22 +16,22 @@ const oemConfig = {
   // ─── 品牌标识 ────────────────────────────────────────────────
   brand: {
     /** 品牌名称：显示在侧边栏 Logo 文字、登录页 alt 文本，以及 i18n 全局品牌名替换 */
-    name: 'test_brand',
+    name: '测试账号',
 
     /** 登录页标题：覆盖 i18n 中的 login.title，留空则使用 i18n 默认值 */
-    loginTitle: 'test_brand',
+    loginTitle: '测试账号',
 
     /** 浏览器标签页标题（即 <title> 标签内容） */
-    pageTitle: 'test_brand',
+    pageTitle: '测试账号',
 
     /** [已废弃] 原版本号前缀，现已由下方 versionText 字段替代 */
     versionPrefix: 'Hsu4',
 
     /** Logo 图片路径（相对于 packages/client/public/ 目录） */
-    logoPath: '/test_logo.png',
+    logoPath: '/mj-logo.png',
 
     /** Favicon 图标路径（相对于 packages/client/public/ 目录） */
-    faviconPath: '/favicon.ico',
+    faviconPath: '/mj-logo.ico',
   },
 
   // ─── 外部链接 ────────────────────────────────────────────────
@@ -81,14 +81,14 @@ const oemConfig = {
    *   '请联系管理员获取账号'
    *   ''  （隐藏提示）
    */
-  loginHintText: '默认账号: admin / 123456',
+  loginHintText: '默认账号: admin 密码请联系管理员获取',
 
   // ─── 空状态 Logo ────────────────────────────────────────────
   emptyState: {
     /** 空状态（无消息时）显示的 Logo 图片路径（相对于 public 目录） */
-    logoPath: '/test_logo.png',
+    logoPath: '/mj-logo.png',
     /** 空状态 Logo 的 alt 文本 */
-    logoAlt: 'test_brand',
+    logoAlt: '测试账号',
   },
 
   // ─── 思考动画视频 ────────────────────────────────────────────
@@ -111,10 +111,10 @@ const oemConfig = {
     buttonText: '联系我们',
 
     /** 点击按钮后弹窗中显示的文案 */
-    dialogText: '如需正式版本，请联系我们获取授权',
+    dialogText: '如需正式版本，请联系管理员',
 
     /** 弹窗中展示的图片 URL（支持相对路径或绝对路径，相对路径基于 public 目录） */
-    dialogImage: '/test_logo.png',
+    dialogImage: '/mj-logo.png',
   },
 
   // ─── 国际化品牌名替换 ────────────────────────────────────────
@@ -128,7 +128,7 @@ const oemConfig = {
      * 注意：替换仅作用于用户可见的文案文本，不影响 API 路径、CLI 命令名、
      * localStorage 键名等逻辑层内容。
      */
-    brandName: 'test_agent',
+    brandName: '测试账号',
   },
 }
 
