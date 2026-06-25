@@ -1,0 +1,147 @@
+/*
+  Hermess OEM A/C design tokens for the production Vue app.
+  This file is additive and maps the Figma-facing HDS token contract onto
+  the existing app CSS custom properties without removing the original theme.
+*/
+
+html[data-theme="enterprise-light"] {
+  --hds-color-bg-app: #f8fafc;
+  --hds-color-bg-sidebar: #0b1220;
+  --hds-color-bg-surface: #ffffff;
+  --hds-color-bg-surface-subtle: #f1f5f9;
+  --hds-color-bg-elevated: #ffffff;
+  --hds-color-bg-selected: #eff6ff;
+  --hds-color-bg-tool-call: #eff6ff;
+  --hds-color-bg-agent-card: #ffffff;
+  --hds-color-text-primary: #0f172a;
+  --hds-color-text-secondary: #334155;
+  --hds-color-text-muted: #64748b;
+  --hds-color-text-inverse: #ffffff;
+  --hds-color-text-accent: #2563eb;
+  --hds-color-border-default: #e2e8f0;
+  --hds-color-border-subtle: #f1f5f9;
+  --hds-color-border-strong: #cbd5e1;
+  --hds-color-border-focus: #2563eb;
+  --hds-color-action-primary: #2563eb;
+  --hds-color-action-primary-hover: #1d4ed8;
+  --hds-color-action-secondary: #f1f5f9;
+  --hds-color-action-danger: #dc2626;
+  --hds-color-status-success: #16a34a;
+  --hds-color-status-success-bg: #ecfdf3;
+  --hds-color-status-warning: #f59e0b;
+  --hds-color-status-warning-bg: #fffbeb;
+  --hds-color-status-danger: #dc2626;
+  --hds-color-status-danger-bg: #fef3f2;
+  --hds-color-status-info: #2563eb;
+  --hds-color-status-info-bg: #eff6ff;
+  --hds-color-status-running: #06b6d4;
+  --hds-color-status-waiting: #f59e0b;
+  color-scheme: light;
+}
+
+html[data-theme="agent-command-dark"] {
+  --hds-color-bg-app: #0b1220;
+  --hds-color-bg-sidebar: #111827;
+  --hds-color-bg-surface: #172033;
+  --hds-color-bg-surface-subtle: #111827;
+  --hds-color-bg-elevated: #172033;
+  --hds-color-bg-selected: rgba(79, 70, 229, 0.24);
+  --hds-color-bg-tool-call: #111827;
+  --hds-color-bg-agent-card: #172033;
+  --hds-color-text-primary: #f8fafc;
+  --hds-color-text-secondary: #e2e8f0;
+  --hds-color-text-muted: #94a3b8;
+  --hds-color-text-inverse: #0b1220;
+  --hds-color-text-accent: #22d3ee;
+  --hds-color-border-default: #334155;
+  --hds-color-border-subtle: #1e293b;
+  --hds-color-border-strong: #64748b;
+  --hds-color-border-focus: #06b6d4;
+  --hds-color-action-primary: #7c3aed;
+  --hds-color-action-primary-hover: #8b5cf6;
+  --hds-color-action-secondary: #4f46e5;
+  --hds-color-action-danger: #dc2626;
+  --hds-color-status-success: #22c55e;
+  --hds-color-status-success-bg: #064e3b;
+  --hds-color-status-warning: #f59e0b;
+  --hds-color-status-warning-bg: #451a03;
+  --hds-color-status-danger: #f87171;
+  --hds-color-status-danger-bg: #450a0a;
+  --hds-color-status-info: #22d3ee;
+  --hds-color-status-info-bg: #083344;
+  --hds-color-status-running: #06b6d4;
+  --hds-color-status-waiting: #f59e0b;
+  color-scheme: dark;
+}
+
+html[data-theme] {
+  --hds-spacing-0: 0;
+  --hds-spacing-1: 4px;
+  --hds-spacing-2: 8px;
+  --hds-spacing-3: 12px;
+  --hds-spacing-4: 16px;
+  --hds-spacing-5: 20px;
+  --hds-spacing-6: 24px;
+  --hds-spacing-8: 32px;
+  --hds-spacing-10: 40px;
+  --hds-spacing-12: 48px;
+  --hds-radius-none: 0;
+  --hds-radius-sm: 4px;
+  --hds-radius-md: 6px;
+  --hds-radius-lg: 8px;
+  --hds-radius-xl: 12px;
+  --hds-radius-full: 999px;
+  --hds-size-control-sm: 32px;
+  --hds-size-control-md: 38px;
+  --hds-size-control-lg: 44px;
+  --hds-size-sidebar-expanded: 248px;
+  --hds-size-sidebar-collapsed: 64px;
+  --hds-size-panel-right: 288px;
+  --hds-size-avatar-sm: 24px;
+  --hds-size-avatar-md: 32px;
+  --font-ui: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  --bg-primary: var(--hds-color-bg-app);
+  --bg-secondary: var(--hds-color-bg-surface-subtle);
+  --bg-sidebar: var(--hds-color-bg-sidebar);
+  --bg-card: var(--hds-color-bg-surface);
+  --bg-card-hover: var(--hds-color-bg-surface-subtle);
+  --bg-input: var(--hds-color-bg-surface);
+  --border-color: var(--hds-color-border-default);
+  --border-light: var(--hds-color-border-subtle);
+  --accent-primary: var(--hds-color-action-primary);
+  --accent-hover: var(--hds-color-action-primary-hover);
+  --accent-muted: var(--hds-color-text-muted);
+  --text-primary: var(--hds-color-text-primary);
+  --text-secondary: var(--hds-color-text-secondary);
+  --text-muted: var(--hds-color-text-muted);
+  --success: var(--hds-color-status-success);
+  --error: var(--hds-color-status-danger);
+  --warning: var(--hds-color-status-warning);
+  --msg-user-bg: var(--hds-color-action-primary);
+  --msg-assistant-bg: var(--hds-color-bg-surface);
+  --msg-system-border: var(--hds-color-border-focus);
+  --code-bg: var(--hds-color-bg-surface-subtle);
+  --text-on-accent: var(--hds-color-text-inverse);
+  --text-on-overlay: #ffffff;
+  --accent-info: var(--hds-color-status-info);
+  --accent-primary-rgb: 37, 99, 235;
+  --accent-hover-rgb: 29, 78, 216;
+  --text-primary-rgb: 15, 23, 42;
+  --text-muted-rgb: 100, 116, 139;
+  --success-rgb: 22, 163, 74;
+  --error-rgb: 220, 38, 38;
+  --warning-rgb: 245, 158, 11;
+  --accent-info-rgb: 37, 99, 235;
+}
+
+html[data-theme="agent-command-dark"] {
+  --accent-primary-rgb: 124, 58, 237;
+  --accent-hover-rgb: 139, 92, 246;
+  --text-primary-rgb: 248, 250, 252;
+  --text-muted-rgb: 148, 163, 184;
+  --success-rgb: 34, 197, 94;
+  --error-rgb: 248, 113, 113;
+  --warning-rgb: 245, 158, 11;
+  --accent-info-rgb: 34, 211, 238;
+}

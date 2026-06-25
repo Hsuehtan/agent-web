@@ -1,6 +1,6 @@
 # Hermess OEM Design System A+C
 
-This is the local source of truth for the planned Figma design system while the current Figma Starter plan blocks multi-mode variables and further MCP calls.
+This is the local source of truth for the Hermess OEM A/C Figma design system and its frontend implementation contract.
 
 Chosen direction:
 
@@ -10,6 +10,9 @@ Chosen direction:
 - Scope source: `../index.html`, `../app.js`, `../styles.css`, and the approved `../design-system-scope-ac.md`
 
 ## Files
+
+- `design.md`  
+  Frontend-facing design implementation guide. This is the recommended starting point for applying the Figma design system in product code.
 
 - `tokens/hermess-ac.tokens.json`  
   Design-token source in a DTCG-inspired JSON shape.
@@ -31,22 +34,15 @@ Chosen direction:
 
 ## Current Figma Status
 
-Created file:
+Current working Figma files:
 
-https://www.figma.com/design/R7WB3DdYyUOTDK3B9eTSZD
+- A Light / Enterprise Ops: https://www.figma.com/design/7JtKYbKWWk7LMQaBuT9vom
+- C Dark / Agent Command: https://www.figma.com/design/ivdDrT9yZDmnoinKxPGzy0
 
-Blocked by:
+Both files have reached Phase 4 QA review. The local state ledger is:
 
-- Starter plan allows only 1 variable mode per collection.
-- Figma MCP call limit has been reached on the Starter plan.
+- `dsb-state-hermess-oem-ac-v1.json`
 
 ## Recommended Next Step
 
-When Figma MCP access is available again:
-
-1. Re-load `figma-generate-library` and `figma-use`.
-2. Inspect the Figma file.
-3. If still on Starter, run the starter-compatible Phase 1 script.
-4. If upgraded, run the multi-mode Phase 1 script.
-5. Validate foundations before creating any components.
-
+Use `design.md` and `tokens/hermess-ac.css` to implement the frontend component library, then map finished code components back to Figma with Code Connect.

@@ -108,7 +108,7 @@ function renderOverview() {
           ["一级模块", "18", "覆盖当前路由"],
           ["核心对象", "Profile / Session / Model", "围绕隔离与授权"],
           ["主工作流", "6", "从登录到监控闭环"],
-          ["设计主题", "Pure Ink", "黑白灰后台工具风格"]
+          ["设计主题", "Enterprise Blue Ops", "低噪蓝色运营台风格"]
         ])}
         <div class="grid three">
           <div class="panel">
@@ -366,7 +366,7 @@ function renderMemory() {
       </div>
       <div class="panel">
         <h3>记忆条目</h3>
-        ${["默认 Profile 用于 Web UI 测试", "偏好 Pure Ink 主题", "部署环境为本地 + Docker 可选"].map((m) => `<div class="session-card active">${m}</div>`).join("")}
+        ${["默认 Profile 用于 Web UI 测试", "偏好 Enterprise Blue Ops 主题", "部署环境为本地 + Docker 可选"].map((m) => `<div class="session-card active">${m}</div>`).join("")}
       </div>
     </div>
   `);

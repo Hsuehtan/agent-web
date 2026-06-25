@@ -29,6 +29,7 @@ function applyClasses() {
   isDark.value = dark
   isComic.value = style.value === 'comic'
   document.documentElement.classList.toggle('dark', dark)
+  document.documentElement.dataset.theme = dark ? 'agent-command-dark' : 'enterprise-light'
   document.documentElement.classList.toggle('comic', isComic.value)
 }
 

@@ -5,7 +5,7 @@ import { resolve } from 'path'
 import pkg from './package.json'
 import oemConfig from './oem.config'
 
-const BACKEND = 'http://127.0.0.1:8648'
+const BACKEND = process.env.HERMES_DEV_BACKEND || 'http://127.0.0.1:5000'
 
 /**
  * Vite plugin to inject OEM config values into index.html at build time,

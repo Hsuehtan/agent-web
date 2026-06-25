@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="enterprise-light">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hermes</title>
+  <link rel="stylesheet" href="/src/styles/hds-tokens.css" />
+  <link rel="stylesheet" href="/src/styles/hds-enterprise-ops.css" />
 
   <!-- Prevent FOUC by applying theme classes immediately -->
   <script>
@@ -25,6 +27,7 @@
         if (isDark) {
           document.documentElement.classList.add('dark');
         }
+        document.documentElement.dataset.theme = isDark ? 'agent-command-dark' : 'enterprise-light';
         if (isComic) {
           document.documentElement.classList.add('comic');
         }

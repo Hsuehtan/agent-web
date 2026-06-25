@@ -22,6 +22,7 @@ const isComic = savedStyle === 'comic'
 if (isDark) {
   document.documentElement.classList.add('dark')
 }
+document.documentElement.dataset.theme = isDark ? 'agent-command-dark' : 'enterprise-light'
 if (isComic) {
   document.documentElement.classList.add('comic')
 }
